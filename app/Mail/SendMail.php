@@ -17,7 +17,8 @@ class SendMail extends Mailable
      *
      * @return void
      */
-    protected  $mail_info;
+    protected $mail_info;
+
     public function __construct($mail_info)
     {
         $this->mail_info = $mail_info;
@@ -32,7 +33,7 @@ class SendMail extends Mailable
     {
         try {
             return $this->subject($this->mail_info["subject"])->markdown('email.user_mail')->from(config('mail.from'), $this->mail_info["sender_name"])->with('mail', $this->mail_info);
-        }catch (\Exception $e){
+        } catch (\Exception $e) {
             Log::error($e->getMessage());
         }
     }

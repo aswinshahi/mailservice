@@ -101,6 +101,7 @@ return [
             'mailers' => [
                 'mailgun',
                 'mailtrap',
+                'sendgrid',
             ],
         ],
     ],

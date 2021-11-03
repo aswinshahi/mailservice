@@ -14,6 +14,10 @@ window.axios = require("axios");
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('home-component', require('./components/HomeComponent.vue').default);
+Vue.component("vs-spinner", require("vue-strap/src/Spinner.vue").default);
+Vue.component('vs-alert',require('vue-strap/src/Alert.vue').default);
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
