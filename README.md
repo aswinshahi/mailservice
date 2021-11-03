@@ -114,7 +114,7 @@ configuration is managed in mail.php.The mailers order can be changed if needed.
 As the providers are configured using test account.
  * In mailgun the address which receives mail(TO EMAIL) should be the account of the email that is registered.
  * In sendgrid the address which is sending email(FROM EMAIL) should be added in the sendgrid > settings 
- ![Alt text](./public/readme_images/sendgridimg.jpg "Optional title")
+ ![Alt text](https://github.com/aswinshahi/mailservice/blob/master/public/readme_images/sendgridimg.JPG?raw=true)
  you will need to confirm in your email after adding Single Sender Verification.
  
  ### Things to notice
