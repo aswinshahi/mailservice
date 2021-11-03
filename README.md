@@ -4,7 +4,7 @@
 This section should list any major frameworks/libraries used in this project.
 * [Vue.js 2.5.17](https://vuejs.org/)
 * [Laravel 8.69.0](https://laravel.com )
-* [Bootstrap](https://getbootstrap.com)
+* [Bootstrap v4.6.1 ](https://getbootstrap.com)
 
 ## Getting Started
 
