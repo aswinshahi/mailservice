@@ -10,7 +10,7 @@ class MailController extends Controller
         try{
             dispatch(new \App\Jobs\SendMail($request->all()));
         } catch (\Exception $e){
-            return response()->json(['error'=>$e->getMessage()]);
+            return response()->json(['success'=>false,'error'=>$e->getMessage()]);
         }
 
         return response()->json(['success'=>true,'status'=>200]);
