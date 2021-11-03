@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 ### Introduction
 This is an email service web app. This app contains different email providers which is used to send email.
 
-The switches to another email provider if one service provider fails.The email service providers used in this app are sendgrid,
+The email provider switches to different email provider if one service provider fails.The email service providers used in this app are sendgrid,
 mailgun,mailtrap. All the service provider configuration here used are in test version.
 
 first you need to define mail providers if not there
