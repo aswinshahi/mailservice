@@ -24,7 +24,7 @@ class MailFormValidation extends FormRequest
     public function rules()
     {
         return [
-            'sender_name' => 'required|alpha',
+            'sender_name' => 'required|string',
             'subject' => 'required|string',
             'to_email' => 'required|email',
             'body' => 'required|string',
