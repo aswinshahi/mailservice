@@ -1943,9 +1943,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37641,19 +37638,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row mt-3" }, [
-      _c("div", { staticClass: "col" }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: {
-            required: "",
-            type: "email",
-            name: "from_email",
-            placeholder: "From",
-            autocomplete: "off",
-          },
-        }),
-      ]),
-      _vm._v(" "),
       _c("div", { staticClass: "col" }, [
         _c("input", {
           staticClass: "form-control",

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'failover'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,6 +80,13 @@ return [
             'transport' => 'sendmail',
             'path' => '/usr/sbin/sendmail -bs',
         ],
+        'sparkpost' => [
+            'transport' => 'smtp',
+            'host' => env('MAILSPARKPOST_HOST', 'smtp.sparkpostmail.com'),
+            'port' => env('MAILSPARKPOST_PORT', 587),
+            'username' => env('MAILSPARKPOST_USERNAME'),
+            'password' => env('MAILSPARKPOST_PASSWORD'),
+        ],
 
         'log' => [
             'transport' => 'log',
@@ -88,6 +95,13 @@ return [
 
         'array' => [
             'transport' => 'array',
+        ],
+        'failover' => [
+            'transport' => 'failover',
+            'mailers' => [
+                'mailgun',
+                'mailtrap',
+            ],
         ],
     ],
 
@@ -103,7 +117,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'aswin.shahi@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 

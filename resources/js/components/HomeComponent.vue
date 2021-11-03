@@ -15,9 +15,6 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col">
-                            <input class="form-control" required type="email" name="from_email" placeholder="From" autocomplete="off"/>
-                        </div>
-                        <div class="col">
                             <input class="form-control" required type="email" name="to_email" placeholder="To" autocomplete="off"/>
                         </div>
                     </div>

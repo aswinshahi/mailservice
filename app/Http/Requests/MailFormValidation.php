@@ -24,11 +24,10 @@ class MailFormValidation extends FormRequest
     public function rules()
     {
         return [
-            'sender_name' => 'required',
-            'subject' => 'required',
-            'from_email' => 'required',
-            'to_email' => 'required',
-            'body' => 'required',
+            'sender_name' => 'required|alpha',
+            'subject' => 'required|string',
+            'to_email' => 'required|email',
+            'body' => 'required|string',
         ];
     }
 }

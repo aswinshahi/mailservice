@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 
 class SendMail extends Mailable
 {
@@ -29,6 +30,10 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->mail_info["subject"])->markdown('email.user_mail')->from($this->mail_info["from_email"],$this->mail_info["sender_name"])->with('mail',$this->mail_info);
+        try {
+            return $this->subject($this->mail_info["subject"])->markdown('email.user_mail')->from(config('mail.from'), $this->mail_info["sender_name"])->with('mail', $this->mail_info);
+        }catch (\Exception $e){
+            Log::error($e->getMessage());
+        }
     }
 }
