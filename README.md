@@ -15,8 +15,8 @@ To get a local copy up and running follow these simple example steps.
 * npm
 * composer
 * node
-* XAMPP
-* LAMPP
+* XAMPP(For windows and mac)
+* LAMPP(For linux)
 * php 7.3.0
   
 
