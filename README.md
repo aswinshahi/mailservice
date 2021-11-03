@@ -42,6 +42,11 @@ To get a local copy up and running follow these simple example steps.
  ```sh
   php artisan migrate 
    ```
+8. Run following command to serve
+
+ ```sh
+   php artisan serve 
+   ```
    
 ### Introduction
 This is an email service web app. This app contains different email providers which is used to send email.
