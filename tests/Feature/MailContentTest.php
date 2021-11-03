@@ -14,7 +14,7 @@ class MailContentTest extends TestCase
      *
      * @return void
      */
-    public function test_mailable_content()
+    public function testMailableContent()
     {
         $mail_bodies = array(
             'sender_name'=>'test user',
