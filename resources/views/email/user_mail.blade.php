@@ -5,7 +5,7 @@
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td style="text-align: -webkit-center;height: 80px; width: 50%; background-color: #628930; padding-left: 50px;">
-                   <h1 style="color:#fff;font-size:24px;font-weight:600;text-align:center;">Free EMail Service Web App</h1>
+                   <h1 style="color:#fff;font-size:24px;font-weight:600;text-align:center;">Free Email Service Web App</h1>
             </td>
             <td style="height: 80px; width: 50%;background-color: #628930; text-align: center; padding-right:30px;">
             </td>
