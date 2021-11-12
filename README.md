@@ -18,6 +18,7 @@ To get a local copy up and running follow these simple example steps.
 * XAMPP(For windows and mac)
 * LAMPP(For linux)
 * php 7.3.0
+* git
   
 
 
@@ -35,10 +36,14 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install && npm run watch
    ```
-4. copy file  `.env.example` and rename it to `.env`
-5. Setup database config and mail config inside here.
-6. create a database with the  same name as in config if it is not created.
-7. Run following command to migrate the table
+4. copy file  `.env.example` and rename it to `.env`.
+5. run  
+   ```sh
+  php artisan key:generate 
+   ```
+6. Setup database config and mail config inside here.
+7. create a database with the  same name as in config if it is not created.
+8. Run following command to migrate the table
  ```sh
   php artisan migrate 
    ```
