@@ -38,9 +38,9 @@ To get a local copy up and running follow these simple example steps.
    ```
 4. copy file  `.env.example` and rename it to `.env`.
 
-5. run  
+5. Install NPM packages
    ```sh
-  php artisan key:generate 
+   php artisan key:generate
    ```
 6. Setup database config and mail config inside here.
 7. create a database with the  same name as in config if it is not created.
