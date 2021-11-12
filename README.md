@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 4. copy file  `.env.example` and rename it to `.env`.
 
-5. Install NPM packages
+5. run command
    ```sh
    php artisan key:generate
    ```
