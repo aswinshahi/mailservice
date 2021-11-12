@@ -37,6 +37,7 @@ To get a local copy up and running follow these simple example steps.
    npm install && npm run watch
    ```
 4. copy file  `.env.example` and rename it to `.env`.
+
 5. run  
    ```sh
   php artisan key:generate 
