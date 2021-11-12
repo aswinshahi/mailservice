@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
  ```sh
   php artisan migrate 
    ```
-8. Run following command to serve
+9. Run following command to serve
 
  ```sh
    php artisan serve 
